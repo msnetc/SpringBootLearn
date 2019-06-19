@@ -1,0 +1,53 @@
+---
+###开发
+APPLICATION_ID: medsci-paas-dev
+service_description:
+  name: sharding-demo
+  version: 1.0.7
+  environment: development
+servicecomb:
+  service:
+    registry:
+      address: http://10.0.1.253:30100
+  rest:
+    address: 0.0.0.0:9299
+
+##测试
+#APPLICATION_ID: medsci-edc
+#service_description:
+#  name: cplat-test
+#  version: 1.0.3
+#  environment: testing
+#servicecomb:
+#  service:
+#    registry:
+#      address: http://192.168.0.28:30100
+#  rest:
+#    address: 0.0.0.0:9999
+
+
+##灰度
+#APPLICATION_ID: medsci-edc
+#service_description:
+#  name: cplat-gray
+#  version: 1.0.1
+#  environment: acceptance
+#servicecomb:
+#  service:
+#    registry:
+#      address: "http://192.168.0.236:30100,http://192.168.0.237:30100,http://192.168.0.238:30100"
+#  rest:
+#    address: 0.0.0.0:9393
+
+##生产
+#APPLICATION_ID: medsci-edc
+#service_description:
+#  name: cplat-prd
+#  version: 1.0.1
+#  environment: production
+#servicecomb:
+#  service:
+#    registry:
+#      address: "http://192.168.0.236:30100,http://192.168.0.237:30100,http://192.168.0.238:30100"
+#  rest:
+#    address: 0.0.0.0:9393

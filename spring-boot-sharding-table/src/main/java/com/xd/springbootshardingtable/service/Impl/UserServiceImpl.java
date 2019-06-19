@@ -18,14 +18,13 @@ import java.util.List;
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+
     @Override
     public boolean save(User entity) {
         return super.save(entity);
     }
 
-    @Override
     public List<User> getUserList() {
         return baseMapper.selectList(Wrappers.<User>lambdaQuery());
     }
-
 }

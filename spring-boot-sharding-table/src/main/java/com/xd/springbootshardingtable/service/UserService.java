@@ -19,7 +19,6 @@ public interface UserService extends IService<User> {
      * @param entity
      * @return
      */
-    @Override
     boolean save(User entity);
 
     /**
