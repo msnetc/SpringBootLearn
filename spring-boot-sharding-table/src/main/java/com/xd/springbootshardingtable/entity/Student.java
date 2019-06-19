@@ -6,12 +6,11 @@ import groovy.transform.EqualsAndHashCode;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
-
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("user")
-public class User extends Model<User> {
+@TableName("student")
+public class Student extends Model<Student> {
 
     /**
      * 主键Id
@@ -28,6 +27,4 @@ public class User extends Model<User> {
      */
     private int age;
 
-
-    private int projectShardKey;
 }
